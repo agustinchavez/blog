@@ -1,2 +1,462 @@
-<h1>This is my about page, hooray!</h1>
-<p>Find me in views/pages/about.html.erb</p>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Agustin Chavez</title>
+
+   <!-- Custom styles for this template go here -->
+    <%= stylesheet_link_tag    'styles', media: 'all', 'data-turbolinks-track' => true %>
+    <!-- jQuery is required for Bootstrap to work -->
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <!-- Latest compiled and minified Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+     <%= javascript_include_tag 'scripts', 'data-turbolinks-track' => true %>
+     <%= csrf_meta_tags %>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- javscript API -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6_AGSzD00U-Y0cFt1NXFVF7GNo-yd39g"></script>
+
+  </head>
+
+  <body data-spy="scroll" data-target=".navbar"  >
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      <a class="navbar-brand" href="#home">Home</a>
+    </div>
+    <div>
+      <div class="navbar-collapse collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Portfolio <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#work">Work</a></li>
+              <li><a href="https://github.com/agustinchavez">Github</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact_me">Contact</a></li>
+          <li><a href="#faq">faq</a></li>
+          <li><a href="#about">about</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron" id="home">
+      <div class="container-fluid">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+        </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="https://s3.amazonaws.com/agustinchavez.ninja/sunsetsunrise.jpg">
+        <div class="carousel-caption">
+          <h1>Agustin Chavez</h1>
+          <p>
+          <strong>Hi, I'm an aspiring web development student looking to make a splash in the field!</strong> Contact me if you'd like to work together, i'm always excited to hear about new projects.</p>
+          <a href="https://google.com">Learn more</a>
+        </div>
+      </div>
+      <div class="item">
+        <img src="https://s3.amazonaws.com/agustinchavez.ninja/lesson8-portfolioheroimage2.jpg" alt="...">
+          <div class="carousel-caption">
+
+          </div>
+      </div>
+      <div class="item">
+        <img src="https://s3.amazonaws.com/agustinchavez.ninja/portfolioheroimage.jpg" alt="...">
+          <div class="carousel-caption">
+            ...
+          </div>
+      </div>
+      <div class="item">
+        <img src="https://s3.amazonaws.com/agustinchavez.ninja/portfolioheroimage3.jpg" alt="...">
+          <div class="carousel-caption">
+            ...
+          </div>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+
+  </div>
+</div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4 col-xs-6">
+          <h2>Portfolio Concept</h2>
+          <p>I am new to web development, so I do not have any projects to display...yet. I do however, have some basic ideas I'd like my portfolio to have. Simple things like an easy to use navigation, so that people could easily look at my work, contact information, I'd like to have linkable images, and relatively few images, as I'd like it to be clutter free. </p>
+          <p><a href="#about"<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="More about me">View details &raquo;</button></a></p>
+
+
+        </div>
+        <div class="col-md-4 col-xs-6">
+          <h2>Project Goals</h2>
+          <p>The plan is to dedicate 40 hours a week to learning we development, I'd like to complete this course in three months in order to start my career as quickly as possible.</p>
+          <p><a href="#faq"<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Frequently Asked Questions">View details &raquo;</button></a></p>
+       </div>
+        <div class="col-md-4 col-xs-6">
+          <h2>Course Goals</h2>
+          <p>Through this course, I hope to gain the skills necessary to be qualified for an entry level junior web developer position. I am making a career change, web development is an exciting field, ever-changing and expanding. I am currently in law school, but i'm not in love with the idea of becoming a lawyer. </p>
+          <p><a href="#contact_me"<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Get In Touch">View details &raquo;</button></a></p>
+        </div>
+      </div>
+
+      <hr>
+
+
+    </div> <!-- /container -->
+
+    <div class="container" id="about">
+      <div class="about">
+        <h1>About Me</h1>
+            <img src="https://s3.amazonaws.com/agustinchavez.ninja/mouse_and_keyboard_orange.jpg" alt="mouse and keyboard" height="30%" width="30%">
+          </div>
+            <p>Hi, my name is Agustin Chavez, I am currently a studying of web development in Chicago.</p>
+            <p>New to programming, i'm looking to learn new skills, and improve everyday.</p>
+            <h2>Biography</h2>
+              <h4> I'm from...</h4>
+                <p>
+                  I was born in Chicago, and raised in the neighboring town of Cicero, IL. Now, you may not have heard of Cicero, but it was the home of some well known historical figures, for instance, Cicero was home to <a href="https://en.wikipedia.org/wiki/Al_Capone" title="More Information" id="item1">Al Capone</a>, the birthplace of <a href="https://en.wikipedia.org/wiki/Ernest_Hemingway" title="More Information" id="item1">Ernest Hemingway</a> (although that part of town has since ceded into Oak Park), and the birthplace of fictional character <a href="https://en.wikipedia.org/wiki/Saul_Goodman" title="More Information" id="item1">Jimmy McGIll (Saul Goodman)</a>, of Breaking Bad, and Better Call Saul.
+                </p>
+
+              <h4>Interests and Hobbies</h4>
+                <p>
+                  I enjoy a variety of activities, but I have to say, my favorite thing to do/watch is soccer. It is in my blood, i've been playing and watching the game since the day I was born. My favorite club team is Chivas de Guadalajara in Mexico, I'm not sure I can describe what this team means to me, so I won't even try, haha. Other than soccer, I also am a fan of boxing, and have been involved in the sport for a number of years. Besides sports, I enjoy listening to some rocking tunage, my alal time favorite band is The Strokes, I'm also partial to Radiohead, The Smiths, Velvet Underground, among many many others.
+                </p>
+                <p>
+                  I am a <a href="#learn_some_more" title="Go to Resume" id="item1">graduate</a> of the University of Illinois at Urbana-Champaign, were I studied Political Science, and Latin American and Carribean Studies. I am also currently enrolled at the John Marshall Law School in Chicago, where I will earn a J.D. degree when I get around to completing the 30 credit hours I need to graduate.
+                </p>
+
+        <div class="my_skills">
+          <h1>My Skills</h1>
+            <p>Here is a brief list of the tech skills I will possess very soon:</p>
+              <ul id ="skills_list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Ruby</li>
+                <li>Ruby on Rails</li>
+                <li>Active Record</li>
+                <li>SQL</li>
+              </ul>
+        </div>
+      </div>
+
+      <div class="row">
+          <h2 class="learn-more" id="learn_some_more">Learn More</h2>
+            <div class="bs-example-modal-lg">
+              <button class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Resume</button>
+            </div>
+
+              <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" data-backdrop="static"  data-keyboard="false">
+                <div class="modal-dialog modal-lg">
+
+                  <div class="modal-content">
+
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title" id="myModalLabel">Resume</h4>
+                    </div>
+                    <div class="modal-body">
+                      <iframe id="modal-frame" src="https://s3.amazonaws.com/agustinchavez.ninja/coming_soon.jpg"></iframe>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+
+        </div>
+
+    </div>
+
+
+    <div class="faq" id="faq">
+      <h1>Frequently Asked Questions</h1>
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Why did you decide to become a web developer?
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+        A growing field with lots of opportunity, I looked at web developers and software engineers as sort of masters of the universe, and i’m eager to play a part.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          What is your design process?
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+        Designing things for myself first, was really an exciting thing, but then looking at someone else enjoy my projects, that’s really where it’s at. I look to create functional, minimalist designs.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Who are your clients?
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+        No one yet, but I hope to soon be able to contribute to my local community.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingFour">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          What is your average project turnaround?
+        </a>
+      </h4>
+    </div>
+    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+      <div class="panel-body">
+        Yet to be determined.
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <table>
+      <tr class="my-row">
+        <th>Services</th>
+        <th></th>
+        <th></th>
+      </tr>
+      <tr class="my-row">
+        <td class="services-column">Plan</td>
+        <td>Objective</td>
+        <td>Wireframe</td>
+      </tr>
+      <tr class="my-row">
+        <td class="services-column">Application Development</td>
+        <td>Ruby on Rails</td>
+        <td>Javascript</td>
+      </tr>
+      <tr class="my-row">
+        <td class="services-column">Website Design</td>
+        <td>UX/UI Responsive</td>
+        <td>Flat Visuals</td>
+      </tr>
+      <tr class="my-row">
+        <td class="services-column">Promote</td>
+        <td>Email</td>
+        <td>SEO</td>
+      </tr>
+      <tr class="my-row">
+        <td class="services-column">Analytics</td>
+        <td>Reporting</td>
+        <td>Improvements</td>
+      </tr>
+</table>
+</div>
+
+<!-- work section -->
+<div class="container" id="work">
+  <h1 class="work_header">Work Examples</h1>
+    <div class="row">
+      <div class="col-xs-6 col-sm-3">
+        <div class="work_example_image" data-toggle="modal" data-target=".bs-example-modal-sm">
+          <a href="#work">
+            <img src="https://s3.amazonaws.com/agustinchavez.ninja/coming_soon.jpg" alt="Mountains" width="100%" height="100%">
+          </a>
+        </div>
+        <div class="modal fade " tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+              </div>
+              <div class="modal-body">
+                <embed id="Work_examples" src="https://s3.amazonaws.com/agustinchavez.ninja/coming_soon.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-6 col-sm-3">
+        <div class="work_example_image" data-toggle="modal" data-target=".bs-example-modal-sm">
+          <a href="#work">
+            <img src="https://s3.amazonaws.com/agustinchavez.ninja/coming_soon.jpg" alt="Mountains" width="100%" height="100%">
+          </a>
+        </div>
+        <div class="modal fade " tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+              </div>
+              <div class="modal-body">
+                <embed id="Work_examples" src="https://s3.amazonaws.com/agustinchavez.ninja/coming_soon.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add the extra clearfix for only the required viewport -->
+      <div class="clearfix visible-xs-block"></div>
+
+      <div class="col-xs-6 col-sm-3">
+        <div class="work_example_image" data-toggle="modal" data-target=".bs-example-modal-sm">
+          <a href="#work">
+            <img src="https://s3.amazonaws.com/agustinchavez.ninja/coming_soon.jpg" alt="Mountains" width="100%" height="100%">
+          </a>
+        </div>
+        <div class="modal fade " tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+              </div>
+              <div class="modal-body">
+                <embed id="Work_examples" src="https://s3.amazonaws.com/agustinchavez.ninja/coming_soon.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-6 col-sm-3">
+        <div class="work_example_image" data-toggle="modal" data-target=".bs-example-modal-sm">
+          <a href="#work">
+            <img src="https://s3.amazonaws.com/agustinchavez.ninja/coming_soon.jpg" alt="Mountains" width="100%" height="100%">
+          </a>
+        </div>
+        <div class="modal fade " tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+              </div>
+              <div class="modal-body">
+                <embed id="Work_examples" src="https://s3.amazonaws.com/agustinchavez.ninja/coming_soon.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="image" id="0"></div>
+    <div class="image" id="1"></div>
+    <div class="image" id="2"></div>
+    <div class="image" id="3"></div> -->
+
+</div>
+
+  <div class="container" id="contact_me">
+    <h1 class="contact_me">Contact Me</h1>
+    <div class="contact_me_pic">
+      <div class="contact_information col-lg-4 col-md-4">
+        <h3 class="get_in_touch">Get in Touch <span class="glyphicon glyphicon-bullhorn"></span></h3>
+          <p>Interested in working together?</p>
+          <br>
+          <p>Send me an email with some information about your project. You can reach me at <strong>chavez.agustin@outlook.com</strong>
+           <span class="glyphicon glyphicon-envelope"></span></p>
+           <br>
+          <p>Please allow up to a couple of business days for me to respond. <span class="glyphicon glyphicon-comment"></span></p>
+<!--
+
+    <div class="container">
+      <iframe
+        width="900"
+        height="250"
+        frameborder="0" style="border:0"
+        src="https://www.google.com/maps/embed/v1/search?key=AIzaSyD6_AGSzD00U-Y0cFt1NXFVF7GNo-yd39g
+          &q=record+stores+in+Chicago">
+      </iframe>
+    </div> -->
+
+      </div>
+
+        <div class="contact-form col-lg-8 col-md-8">
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input class="form-control" id="name-box" type="text" id="name"
+              <textarea  maxlength=30 placeholder="Enter your name" class="message-box"></textarea>
+
+              <label for="name">E-mail address*</label>
+              <input class="form-control" id="email-box" type="email" required="required"
+              <textarea maxlength=30 placeholder="Enter your e-mail address" class="message-box">
+
+              <label for="name">Message*</label>
+              <textarea  class="form-control" id="message-box"maxlength=400 placeholder="Enter your message" style="resize:none" cols="50" rows="10" required="required" ></textarea>
+
+              <button type="submit" class="btn btn-primary" id="button">Submit</button>
+            </div>
+          </form>
+        </div>
+        <div id="map-canvas" style="height: 300px; width:900px">
+    </div>
+
+  </div>
+
+  <p id="visible-comment"></p>
+  <p id="char-count"></p>
+
+
+  <footer>
+    <p>&copy Agustin Chavez <a href="https://twitter.com/chavezagustin1" class="twitter-follow-button" data-show-count="false">Follow @chavezagustin1</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></p>
+
+  </footer>
+
+    <!--
+    ================================================== -->
+    <!-- Can place script tags with JavaScript files here -->
+
+  </body>
+</html>
