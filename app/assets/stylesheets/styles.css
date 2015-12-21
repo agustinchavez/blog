@@ -72,6 +72,10 @@ body {
 
 #about {
     padding: 0%;
+    border-right: 1em solid transparent;
+    border-bottom: 1em solid #4c4c4c;
+    line-height: 50px;
+
 }
 
 .about h1 {
@@ -95,6 +99,10 @@ body {
     float: right;
     padding-left: 8%;
     padding-top: 8%;
+}
+
+.aboutPic {
+    padding:0%;
 }
 
 .aboutText {
@@ -141,13 +149,20 @@ body {
 /*Services provided*/
 
 #services_wrapper {
-    margin-top: 5%;
+    margin-top: 3%;
     padding: 5%;
+    margin-bottom: 3%;
 }
 
-#services_wrapper .glyphicon-pencil {
-  font-size: 1.2em;
+.glyphicon-pencil, .glyphicon-wrench, .glyphicon-open {
+  font-size: 3.5em;
+  text-align: center;
+  border-radius: 50%;
+  border: 3px solid;
+  padding: 10%;
+  margin-left: 32%;
 }
+
 
 .indiv_serv h2 {
   font-size: 2em;
@@ -162,6 +177,7 @@ body {
   line-height: 20px;
   text-align: center;
   font-family: 'Source Sans Pro', sans-serif;
+  position: absolute;
 }
 
 /*This section affects the contact section of the page.*/
@@ -214,44 +230,42 @@ body {
 }
 
 /*This section affects the faq section of the page*/
-.panel-title {
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-    font-size: 1.75em;
+.faq{
+    width:90%;
+    float: center;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-.panel-body {
-    font-family: "Comic Sans MS", cursive, sans-serif;
-    font-size: 1em;
-}
-
-.panel-heading {
-    background-color: #E3E6ED;
-}
-
-.panel-group {
-    width: 90%;
-    padding: 1% 15%;
-}
-
-.faq h1 {
-    font-size: 3em;
+#faq {
     line-height: 1.05;
-    font-family: 'Baumans', cursive;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    text-align: center;
-    border-style: solid;
-    border-width: 5px;
-    background-color: white;
-    margin: 10% 2.5% 5% 2.5%;
-    width: 95%;
+    float: right;
+    padding-left: 10%;
+    padding-top: 20%;
+    background-image: url("https://s3.amazonaws.com/agustinchavez.ninja/portfolioheroimage3.jpg");
+    background-size: cover;
+    color: black;
+    background-position: bottom;
+    width: 100%;
+    margin-bottom: 1%;
+    margin-top: 2%;
+    padding-bottom: 15%;
 }
 
-.faq {
-    margin-top: 2%;
-    margin-bottom: 2%;
+#faq h1{
+    font-size: 10em;
+    font-family: 'Baumans', cursive;
+    padding-left: 10%;
+    padding-top: 0%;
+}
+
+#faq li{
+    text-decoration: none;
+    list-style-type: none;
+    padding: 4%;
+    font-size: 1.75em;
+    font-family: 'Baumans', cursive;
+    width: 100%;
 }
 
 /*This section affects the work examples section of the webpage*/

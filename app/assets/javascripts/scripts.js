@@ -119,3 +119,40 @@ $(function () {
     });
     });
 
+//service wrapper show/hide/change background color
+$(document).ready(function(){
+    $("#design-description, #develop-description, #deploy-description").stop().hide();
+});
+
+
+$(document).ready(function(){
+  $(".glyphicon-pencil").hover(function() {
+   $(".glyphicon-pencil").stop().css("background","#193366");
+   $("#design-description").stop().show();
+}, function() {
+   $(".glyphicon-pencil").stop().css("background","white"); //set it back
+   $("#design-description").stop().hide();                 //set it back
+});
+});
+
+$(document).ready(function(){
+  $(".glyphicon-wrench").hover(function() {
+   $(".glyphicon-wrench").stop().css("background","#193366");
+   $("#develop-description").stop().show();
+}, function() {
+   $(".glyphicon-wrench").stop().css("background","white"); //set it back
+   $("#develop-description").stop().hide();                 //set it back
+});
+});
+
+$(document).ready(function(){
+  $(".glyphicon-open").hover(function() {
+   $(".glyphicon-open").stop().css("background","#193366");
+   $("#deploy-description").stop().show();
+}, function() {
+   $(".glyphicon-open").stop().css("background","white"); //set it back
+   $("#deploy-description").stop().hide();                 //set it back
+});
+});
+
+

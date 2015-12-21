@@ -15,7 +15,6 @@
     <!-- Latest compiled and minified Bootstrap JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
-    <script src="jquery.scrollmagic.min.js"></script>
      <%= javascript_include_tag 'scripts', 'data-turbolinks-track' => true %>
      <%= csrf_meta_tags %>
 
@@ -124,8 +123,8 @@
     <div class="container" id="about">
       <div class="about">
         <h1>About Me</h1>
-          </div>
-            <div class="col-md-6 aboutPic"><img src="https://s3.amazonaws.com/agustinchavez.ninja/mouse_and_keyboard_orange.jpg" width="355" height="417" alt="octopus"/></div>
+      </div>
+      <div class="col-md-6 aboutPic"><img src="https://s3.amazonaws.com/agustinchavez.ninja/mouse_and_keyboard_orange.jpg" width="355" height="417" alt="octopus"/></div>
     <div class="col-md-6 aboutText">
       <p>
         My love affair with web development began with a simple static site. After a few months of emersive study I have begun to create web apps for others to enjoy. I am focused on creating custom web applications that automate and improve business processes, while remaining flexible for iteration. I am a full-stack developer who can deliver a complete product from start to finish.
@@ -136,89 +135,45 @@
 
    <div class="row" id="services_wrapper">
         <div class="col-md-4 indiv_serv">
-            <a name= "services"></a>
           <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
           <h2>Design</h2>
-          <p>Each one of my designs begin with a blank canvas. Let's work together to design something you'll love.</p>
+          <p id="design-description">Each one of my designs begin with a blank canvas. Let's work together to design something you'll love.</p>
 
         </div>
         <div class="col-md-4 indiv_serv">
 
           <span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>
           <h2>Develop</h2>
-          <p>Responsive development will help make your website easily accessible across all devices.</p>
+          <p id="develop-description">Responsive development will help make your website easily accessible across all devices.</p>
 
         </div>
         <div class="col-md-4 indiv_serv">
           <span class="glyphicon glyphicon-open" aria-hidden="true"></span>
           <h2>Deploy</h2>
-          <p>launch your site, so the whole world can see</p>
-
+          <p id="deploy-description">launch your site, so the whole world can see</p>
         </div>
     </div>
+    <div class="faq">
+     <div class="row" id="faq">
+      <div class="col-md-2">
+        <ul>
+          <li>RubyonRails</li>
+          <li>Design</li>
+          <li>Development</li>
+          <li>Applications</li>
+          <li>Mobile First</li>
+          <li>Test Driven Development</li>
+          <li>Version Control</li>
+        </ul>
+      </div>
+      <div class="col-md-10">
+        <h1>
+          My<br><strong>Services</strong>
+        </h1>
+      </div>
+    </div>
 
-
-    <div class="faq" id="faq">
-      <h1>Frequently Asked Questions</h1>
-    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingOne">
-      <h4 class="panel-title">
-        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          Why did you decide to become a web developer?
-        </a>
-      </h4>
     </div>
-    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-      <div class="panel-body">
-        A growing field with lots of opportunity, I looked at web developers and software engineers as sort of masters of the universe, and i’m eager to play a part.
-      </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingTwo">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          What is your design process?
-        </a>
-      </h4>
-    </div>
-    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-      <div class="panel-body">
-        Designing things for myself first, was really an exciting thing, but then looking at someone else enjoy my projects, that’s really where it’s at. I look to create functional, minimalist designs.
-      </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingThree">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Who are your clients?
-        </a>
-      </h4>
-    </div>
-    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-      <div class="panel-body">
-        No one yet, but I hope to soon be able to contribute to my local community.
-      </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingFour">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-          What is your average project turnaround?
-        </a>
-      </h4>
-    </div>
-    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-      <div class="panel-body">
-        Yet to be determined.
-      </div>
-    </div>
-  </div>
-  </div>
-</div>
 
 <!-- work section -->
   <div class="container" id="work">
