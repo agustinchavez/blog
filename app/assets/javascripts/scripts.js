@@ -18,7 +18,7 @@ var myKitties = [
 ];
 
 $(document).ready(function() {
-    $(".form-control").css("background-color", "pink");
+    $(".form-control").css("background-color", "#a0bfde");
     $("#button").on("click", function() {
         console.log("clicked");
 
@@ -100,7 +100,7 @@ $(document).ready(function() {
 
 $(function () {
       // tooltip on a few words in the about me section.
-      $('#[item1]').tooltip();
+      $('#item1').tooltip();
       // tooltip on words in the container section.
       $('[data-toggle="tooltip"]').tooltip();
       // scrollspy line
@@ -118,3 +118,4 @@ $(function () {
 
     });
     });
+

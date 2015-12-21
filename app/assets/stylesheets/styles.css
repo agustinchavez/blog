@@ -16,10 +16,15 @@ body {
 
 .carousel-caption h1 {
     margin-bottom: 8%;
+    font-family: 'Baumans', cursive;
 }
 
 #carousel-example-generic {
     width: 100%;
+}
+
+#home {
+    padding: 1%;
 }
 
 /*This section affects the navbar*/
@@ -55,19 +60,34 @@ body {
     color: #ff0;
 }
 
+/*This section affects right after the carousel*/
+.introduction {
+    text-align: center;
+    padding: 3%;
+    margin:3%;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
 /*This section affects the about section*/
+
+#about {
+    padding: 0%;
+}
+
 .about h1 {
     font-size: 3em;
     line-height: 1.05;
-    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+    font-family: 'Baumans', cursive;
     font-weight: bold;
     text-transform: uppercase;
+    margin-top: 0%;
     padding-top: 5%;
     padding-bottom: 5%;
     text-align: center;
     border-style: solid;
     border-width: 5px;
     margin-bottom: 5%;
+    background-color: white;
 }
 
 .about img {
@@ -75,6 +95,10 @@ body {
     float: right;
     padding-left: 8%;
     padding-top: 8%;
+}
+
+.aboutText {
+    font-size: 1.25em;
 }
 
 
@@ -96,7 +120,7 @@ body {
     margin-right: 2.12766%;
     float: none;
     margin: 0 auto 2rem;
-    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+    font-family: 'Baumans', cursive;
     line-height: 1.75;
     font-size: 200%;
     color: #111;
@@ -108,41 +132,43 @@ body {
     margin-right: 2.12766%;
     float: none;
     margin: 0 auto 2rem;
-    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+    font-family: 'Baumans', cursive;
     line-height: 1.75;
     font-size: 100%;
     color: #111;
     font-weight: bold;
 }
+/*Services provided*/
 
-.my_skills h1 {
-    width: 75%;
-    float: left;
-    margin-right: 2.12766%;
-    float: none;
-    margin: 0 auto 2rem;
-    font-family: "Open Sans",Helvetica,Arial,sans-serif;
-    line-height: 1.75;
-    font-size: 200%;
-    color: #111;
+#services_wrapper {
+    margin-top: 5%;
+    padding: 5%;
 }
 
-.my_skills ul {
-    width: 75%;
-    float: left;
-    margin-right: 2.12766%;
-    float: none;
-    margin: 0 auto 2rem;
-    font-family: "PT Serif",Georgia,Times,serif;
-    line-height: 1.75;
-    font-size: 112.5%;
+#services_wrapper .glyphicon-pencil {
+  font-size: 1.2em;
+}
+
+.indiv_serv h2 {
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Montserrat Alternates', sans-serif;
+  text-align: center;
+}
+
+.indiv_serv p {
+  font-size: 1.2em;
+  line-height: 20px;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 /*This section affects the contact section of the page.*/
 .get_in_touch {
     font-size: 1em;
     line-height: 1.05;
-    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+    font-family: 'Baumans', cursive;
     font-weight: bold;
     text-transform: uppercase;
     margin-top: 8%;
@@ -159,22 +185,6 @@ body {
     float: right;
     padding-left: 10%;
     padding-top: 20%;
-}
-
-.contact_me {
-    font-size: 3em;
-    line-height: 1.05;
-    font-family: "Open Sans",Helvetica,Arial,sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    text-align: center;
-    border-style: solid;
-    border-width: 5px;
-}
-
-.contact_me_pic {
     background-image: url("https://s3.amazonaws.com/agustinchavez.ninja/coffee_mug.jpg");
     background-attachment: fixed;
     background-size: cover;
@@ -184,6 +194,23 @@ body {
     margin-bottom: 1%;
     margin-top: 1%;
     padding-bottom: 15%;
+}
+
+.contact_me {
+    font-size: 3em;
+    line-height: 1.05;
+    font-family: 'Baumans', cursive;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+    border-style: solid;
+    border-width: 5px;
+}
+
+#contact_me {
+    margin-left: -5%;
 }
 
 /*This section affects the faq section of the page*/
@@ -209,7 +236,7 @@ body {
 .faq h1 {
     font-size: 3em;
     line-height: 1.05;
-    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+    font-family: 'Baumans', cursive;
     font-weight: bold;
     text-transform: uppercase;
     padding-top: 5%;
@@ -231,7 +258,7 @@ body {
 .work_header {
     font-size: 3em;
     line-height: 1.05;
-    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+    font-family: 'Baumans', cursive;
     font-weight: bold;
     text-transform: uppercase;
     padding-top: 5%;
@@ -326,7 +353,7 @@ table {
 
 .services-column {
     font-size: 1.25em;
-    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+    font-family: 'Baumans', cursive;
     border-style: solid;
     border-width: 5px;
     text-align: left;
