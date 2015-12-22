@@ -56,65 +56,20 @@
   </div>
 </nav>
 
-
-
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron" id="home">
-      <div class="container-fluid">
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-        </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <img src="https://s3.amazonaws.com/agustinchavez.ninja/sunsetsunrise.jpg">
-        <div class="carousel-caption">
-          <h1>Be Exceptional</h1>
-          <p>
-          <strong>In a world of boring, make sure your website stands out.</strong> Contact me if you'd like to work together, i'm always excited to hear about new projects.</p>
-          <a href="#about">Learn more</a>
-        </div>
-      </div>
-      <div class="item">
-        <img src="https://s3.amazonaws.com/agustinchavez.ninja/lesson8-portfolioheroimage2.jpg" alt="...">
-          <div class="carousel-caption">
-
-          </div>
-      </div>
-      <div class="item">
-        <img src="https://s3.amazonaws.com/agustinchavez.ninja/portfolioheroimage.jpg" alt="...">
-          <div class="carousel-caption">
-            ...
-          </div>
-      </div>
-      <div class="item">
-        <img src="https://s3.amazonaws.com/agustinchavez.ninja/portfolioheroimage3.jpg" alt="...">
-          <div class="carousel-caption">
-            ...
-          </div>
-      </div>
-    </div>
-
-    <!-- Controls -->
-    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-
-
-  </div>
+<div class="jumbotron" id="home">
+  <div id="background"></div>
+  <div id="midground"></div>
+  <div id="foreground"></div>
 </div>
+
+<!-- <div class="backgroun-caption">
+      <h1>Be Exceptional</h1>
+      <p>
+      <strong>In a world of boring, make sure your website stands out.</strong> Contact me if you'd like to work together, i'm always excited to hear about new projects.</p>
+      <a href="#about">Learn more</a>
+    </div>
+ -->
+
 
 <div class="introduction">
   <h1>Hi, my name is Agustin Chavez, I build <strong>beatiful</strong> and <strong>functional</strong> websites and web apps for small businesses and clients.</h1>
@@ -124,7 +79,7 @@
       <div class="about">
         <h1>About Me</h1>
       </div>
-      <div class="col-md-6 aboutPic"><img src="https://s3.amazonaws.com/agustinchavez.ninja/mouse_and_keyboard_orange.jpg" width="355" height="417" alt="octopus"/></div>
+      <div class="col-md-6 aboutPic"><img src="/assets/mouse_and_keyboard_orange.jpg" width="355" height="417" alt="octopus"/></div>
     <div class="col-md-6 aboutText">
       <p>
         My love affair with web development began with a simple static site. After a few months of emersive study I have begun to create web apps for others to enjoy. I am focused on creating custom web applications that automate and improve business processes, while remaining flexible for iteration. I am a full-stack developer who can deliver a complete product from start to finish.
@@ -153,7 +108,8 @@
           <p id="deploy-description">launch your site, so the whole world can see</p>
         </div>
     </div>
-    <div class="faq">
+
+    <div class="row" id="list_services">
      <div class="row" id="faq">
       <div class="col-md-2">
         <ul>
@@ -172,18 +128,15 @@
         </h1>
       </div>
     </div>
-
-    </div>
+</div>
 
 <!-- work section -->
-  <div class="container" id="work">
-    <h1 class="work_header">Work Examples</h1>
-    <div class="row">
-      <div class="col-xs-6 col-sm-3">
+
+
+    <div class="row row-modal">
+      <div class="col-xs-6 col-sm-3" id="first_example">
       <div class="work_example_image" data-toggle="modal" data-target=".bs-example-modal-sm">
-        <a href="#work">
-          <img src="https://s3.amazonaws.com/agustinchavez.ninja/coming_soon.jpg" alt="Mountains" width="100%" height="100%">
-        </a>
+        <img src="/assets/boxwebpage.png" class="example-images" alt="Box Web page" width="100%" height="100%">
       </div>
       <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" data-backdrop="static"  data-keyboard="false">
         <div class="modal-dialog modal-lg">
@@ -200,11 +153,9 @@
       </div>
     </div>
 
-      <div class="col-xs-6 col-sm-3">
+      <div class="col-xs-6 col-sm-3" id="second_example">
         <div class="work_example_image" data-toggle="modal" data-target=".bs-example-modal-sm">
-        <a href="#work">
-          <img src="https://s3.amazonaws.com/agustinchavez.ninja/coming_soon.jpg" alt="Mountains" width="100%" height="100%">
-        </a>
+          <img src="/assets/secondboxwebpage.png" class="example-images" alt="Mountains" width="100%" height="100%">
       </div>
       <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" data-backdrop="static"  data-keyboard="false">
         <div class="modal-dialog modal-lg">
@@ -224,11 +175,9 @@
       <!-- Add the extra clearfix for only the required viewport -->
       <div class="clearfix visible-xs-block"></div>
 
- <div class="col-xs-6 col-sm-3">
+ <div class="col-xs-6 col-sm-3" id="third_example">
         <div class="work_example_image" data-toggle="modal" data-target=".bs-example-modal-sm">
-        <a href="#work">
-          <img src="https://s3.amazonaws.com/agustinchavez.ninja/coming_soon.jpg" alt="Mountains" width="100%" height="100%">
-        </a>
+          <img src="/assets/thirdboxwebpage.png" class="example-images" alt="Mountains" width="100%" height="100%">
       </div>
       <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" data-backdrop="static"  data-keyboard="false">
         <div class="modal-dialog modal-lg">
@@ -245,11 +194,9 @@
       </div>
       </div>
 
-       <div class="col-xs-6 col-sm-3">
+       <div class="col-xs-6 col-sm-3" id="fourth_example">
         <div class="work_example_image" data-toggle="modal" data-target=".bs-example-modal-sm">
-        <a href="#work">
-          <img src="https://s3.amazonaws.com/agustinchavez.ninja/coming_soon.jpg" alt="Mountains" width="100%" height="100%">
-        </a>
+          <img src="/assets/fourthboxwebpage.png" class="example-images" alt="Mountains" width="100%" height="100%">
       </div>
       <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" data-backdrop="static"  data-keyboard="false">
         <div class="modal-dialog modal-lg">

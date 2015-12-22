@@ -8,24 +8,6 @@ body {
 }
 
 /*This section affects the carousel at the top of page*/
-.carousel-caption p {
-    color: #E3E6F1;
-    text-align: center;
-    width: 100%;
-}
-
-.carousel-caption h1 {
-    margin-bottom: 8%;
-    font-family: 'Baumans', cursive;
-}
-
-#carousel-example-generic {
-    width: 100%;
-}
-
-#home {
-    padding: 1%;
-}
 
 /*This section affects the navbar*/
 #navbar li {
@@ -72,10 +54,7 @@ body {
 
 #about {
     padding: 0%;
-    border-right: 1em solid transparent;
-    border-bottom: 1em solid #4c4c4c;
-    line-height: 50px;
-
+    margin-bottom: 0%;
 }
 
 .about h1 {
@@ -149,9 +128,15 @@ body {
 /*Services provided*/
 
 #services_wrapper {
-    margin-top: 3%;
+    width: 90%;
     padding: 5%;
-    margin-bottom: 3%;
+    padding-bottom: 7%;
+    margin-left: auto;
+    margin-right: auto;
+    border-right: 1em solid transparent;
+    border-bottom: 1em solid #4c4c4c;
+    border-top: 1em solid #4c4c4c;
+    border-left: 1em solid transparent;
 }
 
 .glyphicon-pencil, .glyphicon-wrench, .glyphicon-open {
@@ -201,7 +186,7 @@ body {
     float: right;
     padding-left: 10%;
     padding-top: 20%;
-    background-image: url("https://s3.amazonaws.com/agustinchavez.ninja/coffee_mug.jpg");
+    background-image: url(/assets/coffee_mug.jpg);
     background-attachment: fixed;
     background-size: cover;
     color: black;
@@ -226,15 +211,15 @@ body {
 }
 
 #contact_me {
-    margin-left: -5%;
+    margin-left: auto;
 }
 
 /*This section affects the faq section of the page*/
-.faq{
+#list_services {
     width:90%;
     float: center;
     margin-right: auto;
-    margin-left: auto;
+    margin-left: 4%;
 }
 
 #faq {
@@ -242,13 +227,12 @@ body {
     float: right;
     padding-left: 10%;
     padding-top: 20%;
-    background-image: url("https://s3.amazonaws.com/agustinchavez.ninja/portfolioheroimage3.jpg");
+    background-image: url(/assets/portfolioheroimage.jpg);
     background-size: cover;
     color: black;
     background-position: bottom;
     width: 100%;
     margin-bottom: 1%;
-    margin-top: 2%;
     padding-bottom: 15%;
 }
 
@@ -257,6 +241,10 @@ body {
     font-family: 'Baumans', cursive;
     padding-left: 10%;
     padding-top: 0%;
+    color: #9B9788;
+}
+#faq h1:hover{
+    color: #D4BC6D;
 }
 
 #faq li{
@@ -265,73 +253,44 @@ body {
     padding: 4%;
     font-size: 1.75em;
     font-family: 'Baumans', cursive;
+    color: #9B9788;
     width: 100%;
+}
+#faq li:hover {
+    font-size: 2em;
+    color: #D4BC6D;
 }
 
 /*This section affects the work examples section of the webpage*/
-.work_header {
-    font-size: 3em;
-    line-height: 1.05;
-    font-family: 'Baumans', cursive;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    text-align: center;
-    border-style: solid;
-    border-width: 5px;
-    background-color: white;
-    margin: 10% 2.5% 5% 2.5%;
-    width: 95%;
-}
-.col-md-3 {
-    padding: 1%;
+
+.row-modal {
+    padding: 3%;
 }
 
-.col-xs-6 {
-    padding: 1%;
+#first_example {
+    background-color: #6784F5;
+    padding:2%;
 }
 
-.img-responsive {
-    display: block;
-    max-width: 100%;
-    height: auto;
+
+#second_example {
+    background-color: #3854C6;
+    padding:2%;
+}
+#third_example {
+    background-color: #6C78A9;
+    padding:2%;
+}
+#fourth_example {
+    background-color: #3E4D8B;
+    padding:2%;
 }
 
-.video {
-    margin: 2% 30%;
-    margin-left: 25%;
+.example-images:hover {
+    width: 104%;
 }
 
-/*This section affects the modal above the footer of the webpage*/
-.learn-more {
-    text-align: left;
-    float: left;
-}
 
-.bs-example-modal-lg {
-    float: right;
-    padding: 15px;
-}
-
-.row {
-    width: 95%;
-    padding: 1% 15%;
-}
-
-.modal-body {
-    height: 500px;
-}
-
-#modal-frame {
-    padding: 10px;
-    width: 100%;
-    height: 100%;
-}
-
-.modal-backdrop.in {
-    z-index: auto;
-}
 
 /*This section affects the footer section of the webpage*/
 footer {
@@ -347,65 +306,5 @@ footer {
     margin-right: 1%;
 }
 
-/*Table of services*/
-table {
-    width: 80%;
-    margin: 2% auto;
-    text-align: center;
-    border-style: solid;
-    border-width: 5px;
-}
 
-.my-row th {
-    padding-bottom: 1%;
-    font-size: 1.5em;
-}
 
-.my-row td {
-    padding-bottom: 2%;
-}
-
-.services-column {
-    font-size: 1.25em;
-    font-family: 'Baumans', cursive;
-    border-style: solid;
-    border-width: 5px;
-    text-align: left;
-    width: 320px;
-}
-
-.image {
-    box-sizing: border-box;
-    border: 2px solid red;
-    width: 200px;
-    height: 200px;
-    margin: 5% 1% 5% 5%;
-    display: inline-block;
-    position: relative;
-}
-
-.info {
-    display: inline-block;
-    color: #fff;
-    font-family: Futura;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 0.5em;
-    line-height: 1.6;
-    position: absolute;
-    top: 15%;
-    left: 22%;
-}
-
-.proj-title {
-    font-weight: 100;
-
-}
-
-.work_example_image {
-    padding: 0%;
-}
-
-#work {
-    padding: 5%;
-}
