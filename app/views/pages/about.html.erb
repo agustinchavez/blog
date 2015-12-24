@@ -11,7 +11,7 @@
     <%= stylesheet_link_tag    'styles', media: 'all', 'data-turbolinks-track' => true %>
     <!-- jQuery is required for Bootstrap to work -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <!-- Latest compiled and minified Bootstrap JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
@@ -57,25 +57,20 @@
 </nav>
 
 <div class="jumbotron" id="home">
-  <div id="background"></div>
-  <div id="midground"></div>
-  <div id="foreground"></div>
-</div>
-
-<!-- <div class="backgroun-caption">
-      <h1>Be Exceptional</h1>
+   <h1>Be Exceptional</h1>
       <p>
-      <strong>In a world of boring, make sure your website stands out.</strong> Contact me if you'd like to work together, i'm always excited to hear about new projects.</p>
-      <a href="#about">Learn more</a>
-    </div>
- -->
-
-
-<div class="introduction">
-  <h1>Hi, my name is Agustin Chavez, I build <strong>beatiful</strong> and <strong>functional</strong> websites and web apps for small businesses and clients.</h1>
+        <strong>In a world of boring, make sure your website stands out.</strong> Contact me if you'd like to work together, i'm always excited to hear about new projects.
+        <a href="#about">Learn more</a>
+      </p>
+  <div id="midground"></div>
 </div>
+
+
 
     <div class="container" id="about">
+      <div class="introduction">
+    <h1>Hi, my name is Agustin Chavez, I build <strong>beatiful</strong> and <strong>functional</strong> websites and web apps for small businesses and clients.</h1>
+  </div>
       <div class="about">
         <h1>About Me</h1>
       </div>
@@ -133,87 +128,19 @@
 <!-- work section -->
 
 
-    <div class="row row-modal">
-      <div class="col-xs-6 col-sm-3" id="first_example">
-      <div class="work_example_image" data-toggle="modal" data-target=".bs-example-modal-sm">
-        <img src="/assets/boxwebpage.png" class="example-images" alt="Box Web page" width="100%" height="100%">
-      </div>
-      <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" data-backdrop="static"  data-keyboard="false">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="myModalLabel">Work</h4>
-            </div>
-            <div class="modal-body">
-              <iframe id="modal-frame" src="https://s3.amazonaws.com/agustinchavez.ninja/sunsetsunrise.jpg"></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+<div class="vex">
+    <a href="#" class="toPopup1"><div class="image1"></div></a>
+    <a href="#" class="toPopup2"><div class="image2"></div></a>
+    <a href="#" class="toPopup3"><div class="image3"></div></a>
 
-      <div class="col-xs-6 col-sm-3" id="second_example">
-        <div class="work_example_image" data-toggle="modal" data-target=".bs-example-modal-sm">
-          <img src="/assets/secondboxwebpage.png" class="example-images" alt="Mountains" width="100%" height="100%">
-      </div>
-      <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" data-backdrop="static"  data-keyboard="false">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="mysecondModalLabel">Example 2</h4>
-            </div>
-            <div class="modal-body">
-              <iframe id="modal-frame" src="https://s3.amazonaws.com/agustinchavez.ninja/sunsetsunrise.jpg"></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-      </div>
+    <div id="toPopup1"><p>Press Esc to close</p>Test 1.</p></div>
+    <div id="toPopup2"><p>Press Esc to close</p>Test 2.</p></div>
+    <div id="toPopup3"><p>Press Esc to close</p>Test 3.</p></div>
 
-      <!-- Add the extra clearfix for only the required viewport -->
-      <div class="clearfix visible-xs-block"></div>
-
- <div class="col-xs-6 col-sm-3" id="third_example">
-        <div class="work_example_image" data-toggle="modal" data-target=".bs-example-modal-sm">
-          <img src="/assets/thirdboxwebpage.png" class="example-images" alt="Mountains" width="100%" height="100%">
-      </div>
-      <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" data-backdrop="static"  data-keyboard="false">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="mysecondModalLabel">Example 3</h4>
-            </div>
-            <div class="modal-body">
-              <iframe id="modal-frame" src="https://s3.amazonaws.com/agustinchavez.ninja/sunsetsunrise.jpg"></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-      </div>
-
-       <div class="col-xs-6 col-sm-3" id="fourth_example">
-        <div class="work_example_image" data-toggle="modal" data-target=".bs-example-modal-sm">
-          <img src="/assets/fourthboxwebpage.png" class="example-images" alt="Mountains" width="100%" height="100%">
-      </div>
-      <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" data-backdrop="static"  data-keyboard="false">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="mysecondModalLabel">Example 4</h4>
-            </div>
-            <div class="modal-body">
-              <iframe id="modal-frame" src="https://s3.amazonaws.com/agustinchavez.ninja/sunsetsunrise.jpg"></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-      </div>
+    <div id="backgroundPopup"></div>
 </div>
 
+<!-- contact form -->
   <div class="container" id="contact_me">
     <h1 class="contact_me">Contact Me</h1>
     <div class="contact_me_pic">
@@ -221,21 +148,10 @@
         <h3 class="get_in_touch">Get in Touch <span class="glyphicon glyphicon-bullhorn"></span></h3>
           <p>Interested in working together?</p>
           <br>
-          <p>Send me an email with some information about your project. You can reach me at <strong>chavez.agustin@outlook.com</strong>
+          <p>Send me an email with some information about your project.
            <span class="glyphicon glyphicon-envelope"></span></p>
            <br>
           <p>Please allow up to a couple of business days for me to respond. <span class="glyphicon glyphicon-comment"></span></p>
-<!--
-
-    <div class="container">
-      <iframe
-        width="900"
-        height="250"
-        frameborder="0" style="border:0"
-        src="https://www.google.com/maps/embed/v1/search?key=AIzaSyD6_AGSzD00U-Y0cFt1NXFVF7GNo-yd39g
-          &q=record+stores+in+Chicago">
-      </iframe>
-    </div> -->
 
       </div>
 

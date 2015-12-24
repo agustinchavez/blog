@@ -155,5 +155,101 @@ $(document).ready(function(){
 });
 });
 
+// pop up windows
 
+jQuery(function($) {
 
+    /************** event to open the popup **************/
+
+    $("a.toPopup1").click(function () {
+        loading(); // loading
+        setTimeout(function () { // then show popup, deley in .5 second
+            loadPopup1(); // function show popup
+        }, 500); // .5 second
+        return false;
+    });
+
+    $("a.toPopup2").click(function () {
+        loading(); // loading
+        setTimeout(function () { // then show popup, deley in .5 second
+            loadPopup2(); // function show popup
+        }, 500); // .5 second
+        return false;
+    });
+
+    $("a.toPopup3").click(function () {
+        loading(); // loading
+        setTimeout(function () { // then show popup, deley in .5 second
+            loadPopup3(); // function show popup
+        }, 500); // .5 second
+        return false;
+    });
+
+    /************** event to close the popup **************/
+
+    $(this).keyup(function (event) {
+        if (event.which == 27) {
+            disablePopup(); // function close pop up
+        }
+    });
+
+    $(this).keyup(function (event) {
+        if (event.which == 27) {
+            disablePopup2(); // function close pop up
+        }
+    });
+
+    $("#backgroundPopup").click(function () {
+        disablePopup(); // function close pop up
+    });
+
+    $("#backgroundPopup").click(function () {
+        disablePopup2(); // function close pop up
+    });
+
+    /************** start: functions. **************/
+
+    function loading() {}
+
+    var popupStatus = 0; // set value
+
+    function loadPopup1() {
+        if (popupStatus == 0) { // if value is 0, show popup
+            $("#toPopup1").fadeIn(0500); // fadein popup div
+            $("#backgroundPopup").css("opacity", "0.7");
+            $("#backgroundPopup").fadeIn(0001);
+            popupStatus = 1; // and set value to 1
+        }
+    }
+
+    function loadPopup2() {
+        if (popupStatus == 0) { // if value is 0, show popup
+            $("#toPopup2").fadeIn(0500); // fadein popup div
+            $("#backgroundPopup").css("opacity", "0.7");
+            $("#backgroundPopup").fadeIn(0001);
+            popupStatus = 1; // and set value to 1
+        }
+    }
+
+    function loadPopup3() {
+        if (popupStatus == 0) { // if value is 0, show popup
+            $("#toPopup3").fadeIn(0500); // fadein popup div
+            $("#backgroundPopup").css("opacity", "0.7");
+            $("#backgroundPopup").fadeIn(0001);
+            popupStatus = 1; // and set value to 1
+        }
+    }
+
+    function disablePopup() {
+        if (popupStatus == 1) { // if value is 1, close popup
+            $("#toPopup1").fadeOut("normal");
+            $("#toPopup2").fadeOut("normal");
+            $("#toPopup3").fadeOut("normal");
+            $("#backgroundPopup").fadeOut("normal");
+            popupStatus = 0; // and set value to 0
+        }
+    }
+
+    /************** end: functions. **************/
+
+});
