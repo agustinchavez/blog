@@ -127,30 +127,30 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   $(".glyphicon-pencil").hover(function() {
-   $(".glyphicon-pencil").stop().css("background","#193366");
+   $(".glyphicon-pencil").stop().css("background","white");
    $("#design-description").stop().show();
 }, function() {
-   $(".glyphicon-pencil").stop().css("background","white"); //set it back
+   $(".glyphicon-pencil").stop().css("background","#0A3570"); //set it back
    $("#design-description").stop().hide();                 //set it back
 });
 });
 
 $(document).ready(function(){
   $(".glyphicon-wrench").hover(function() {
-   $(".glyphicon-wrench").stop().css("background","#193366");
+   $(".glyphicon-wrench").stop().css("background","white");
    $("#develop-description").stop().show();
 }, function() {
-   $(".glyphicon-wrench").stop().css("background","white"); //set it back
+   $(".glyphicon-wrench").stop().css("background","#0A3570"); //set it back
    $("#develop-description").stop().hide();                 //set it back
 });
 });
 
 $(document).ready(function(){
   $(".glyphicon-open").hover(function() {
-   $(".glyphicon-open").stop().css("background","#193366");
+   $(".glyphicon-open").stop().css("background","white");
    $("#deploy-description").stop().show();
 }, function() {
-   $(".glyphicon-open").stop().css("background","white"); //set it back
+   $(".glyphicon-open").stop().css("background","#0A3570"); //set it back
    $("#deploy-description").stop().hide();                 //set it back
 });
 });

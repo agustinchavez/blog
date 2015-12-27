@@ -1,9 +1,5 @@
-body {
-    position: relative;
-}
 
 .container {
-    width: 80%;
     margin: 2% auto;
 }
 
@@ -60,6 +56,7 @@ body {
     padding-bottom: 30%;
     z-index: 100;
     top: 0;
+    margin-bottom: 0%;
 }
 
 #midground {
@@ -82,14 +79,17 @@ body {
     text-align: center;
     font-size: 8em;
     margin-top: 15%;
+    color: #AEB2B8;
 }
 
 #home p {
     color: #E3E6F1;
-    width: 80%;
+    /*width: 80%;*/
     margin-right: auto;
     margin-left: auto;
     text-align: center;
+    font-size: 1.2em;
+    color: #AEB2B8;
 }
 
 
@@ -97,50 +97,71 @@ body {
 /*This section affects right after the carousel*/
 .introduction {
     text-align: center;
-    padding: 3%;
-    margin:3%;
+    padding: 5%;
     font-family: 'Source Sans Pro', sans-serif;
-    position: relative;
-    margin-top: 1%;
+    margin-left: 0%;
+    width: 100%;
+    height:22em;
+    background-color: #20296B;
+    position:relative;
+}
+
+.introduction h1 {
+    color: #AEB2B8;
 }
 
 /*This section affects the about section*/
+.col-md-6 {
+    background:#3F3F45;
+}
+
+.col-md-6:before{
+    content:'';
+    position:absolute;
+    bottom:100%;
+    border-left:100vw solid transparent;
+    border-bottom: 4.5em solid #3F3F45;
+    padding-top: 5%;
+}
 
 #about {
     padding: 0%;
     margin-bottom: 0%;
-    margin-top: 1%;
+    margin-top: 0%;
+    background-color: #3F3F45;
+    width: 100%;
 }
 
 .about h1 {
-    font-size: 3em;
+    font-size: 2.5em;
     line-height: 1.05;
     font-family: 'Baumans', cursive;
     font-weight: bold;
     text-transform: uppercase;
     margin-top: 0%;
     padding-top: 5%;
-    padding-bottom: 5%;
+    padding-bottom: 1%;
     text-align: center;
-    border-style: solid;
-    border-width: 5px;
     margin-bottom: 5%;
-    background-color: white;
+    color: #AEB2B8;
 }
 
-.about img {
-    line-height: 1.05;
-    float: right;
-    padding-left: 8%;
-    padding-top: 8%;
+.aboutPic{
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
-
-.aboutPic {
-    padding:0%;
+.aboutPic img{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-left: 10%;
+    border-radius: 25px;
+    border: 2px solid black;
+    background-color: black;
 }
 
 .aboutText {
     font-size: 1.25em;
+
 }
 
 
@@ -153,7 +174,7 @@ body {
     font-family: "PT Serif",Georgia,Times,serif;
     line-height: 1.75;
     font-size: 112.5%;
-    color: #111;
+    color: #AEB2B8;
 }
 
 .container h2 {
@@ -183,15 +204,11 @@ body {
 /*Services provided*/
 
 #services_wrapper {
-    width: 90%;
     padding: 5%;
     padding-bottom: 7%;
     margin-left: auto;
     margin-right: auto;
-    border-right: 1em solid transparent;
-    border-bottom: 1em solid #4c4c4c;
-    border-top: 1em solid #4c4c4c;
-    border-left: 1em solid transparent;
+    background-color: #0A3570;
 }
 
 .glyphicon-pencil, .glyphicon-wrench, .glyphicon-open {
@@ -201,6 +218,8 @@ body {
   border: 3px solid;
   padding: 10%;
   margin-left: 32%;
+  border-color:#AEB2B8;
+  color: #AEB2B8;
 }
 
 
@@ -210,6 +229,7 @@ body {
   text-transform: uppercase;
   font-family: 'Montserrat Alternates', sans-serif;
   text-align: center;
+  color: #AEB2B8;
 }
 
 .indiv_serv p {
@@ -218,6 +238,10 @@ body {
   text-align: center;
   font-family: 'Source Sans Pro', sans-serif;
   position: absolute;
+}
+
+#design-description, #develop-description, #deploy-description {
+    color: #AEB2B8;
 }
 
 /*This section affects the contact section of the page.*/
@@ -368,14 +392,15 @@ footer {
 
 /*vex popup*/
 .vex {
-  background-color: blue;
+  background-color: #0A3570;
+  position: absolute;
+  width: 100%;
 }
 .image1 {
   width: 23%;
   height: 215px;
   margin: 3%;
   float: left;
-  background-image: url(/assets/fourthboxwebpage.png);
 }
 
 .image2 {
@@ -383,7 +408,6 @@ footer {
   height: 215px;
   margin: 3%;
   float: left;
-  background-image: url(/assets/secondboxwebpage.png);
 }
 
 .image3 {
@@ -391,7 +415,6 @@ footer {
   height: 215px;
   margin: 3%;
   float: left;
-  background-image: url(/assets/thirdboxwebpage.png);
 }
 
 #backgroundPopup {
