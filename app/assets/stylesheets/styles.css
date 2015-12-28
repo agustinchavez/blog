@@ -115,7 +115,7 @@
     background:#3F3F45;
 }
 
-.col-md-6:before{
+.aboutPic:before{
     content:'';
     position:absolute;
     bottom:100%;
@@ -205,10 +205,10 @@
 
 #services_wrapper {
     padding: 5%;
-    padding-bottom: 7%;
+    padding-bottom: 12%;
     margin-left: auto;
     margin-right: auto;
-    background-color: #0A3570;
+    background: #20296B;
 }
 
 .glyphicon-pencil, .glyphicon-wrench, .glyphicon-open {
@@ -251,13 +251,13 @@
     font-family: 'Baumans', cursive;
     font-weight: bold;
     text-transform: uppercase;
-    margin-top: 8%;
-    width: 75%;
+    /*margin-top: 8%;*/
+    width: 100%;
     float: left;
     margin-right: 2.12766%;
     float: none;
     margin: 0 auto 2rem;
-    padding-top: 5%;
+    /*padding-top: 5%;*/
 }
 
 .contact_me_pic {
@@ -265,61 +265,55 @@
     float: right;
     padding-left: 10%;
     padding-top: 20%;
-    background-image: url(/assets/coffee_mug.jpg);
+    background-image: url(/assets/blue_coffee_mug.jpg);
     background-attachment: fixed;
     background-size: cover;
     color: black;
     background-position: bottom;
     width: 100%;
-    margin-bottom: 1%;
-    margin-top: 1%;
     padding-bottom: 15%;
 }
 
 .contact_me {
-    font-size: 3em;
+    font-size: 5em;
     line-height: 1.05;
     font-family: 'Baumans', cursive;
     font-weight: bold;
     text-transform: uppercase;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    text-align: center;
-    border-style: solid;
-    border-width: 5px;
-    margin-top: 25%;
+    color: #AEB2B8;
+    padding: 5% 5% 5% 5%;
+    margin: 8% 30% 10% 23%;
+    background:#7f7f7f;
+    background:rgba(0,0,0,0.5);
 }
 
 #contact_me {
-    margin-left: auto;
+    width: 100%;
+    padding: 0%;
 }
 
 /*This section affects the faq section of the page*/
-#list_services {
-    width:90%;
-    float: center;
-    margin-right: auto;
-    margin-left: 4%;
-}
 
 #faq {
-    line-height: 1.05;
-    float: right;
-    padding-left: 10%;
-    padding-top: 20%;
-    background-image: url(/assets/portfolioheroimage.jpg);
-    background-size: cover;
-    color: black;
-    background-position: bottom;
-    width: 100%;
-    margin-bottom: 1%;
-    padding-bottom: 15%;
+
+    background: #3F3F45;
+    padding-bottom: 8%;
+
+}
+
+.col-md-2:before{
+    content:'';
+    position:absolute;
+    bottom:100%;
+    border-right:100vw solid transparent;
+    border-bottom: 5em solid #3F3F45;
+    padding-top: 5%;
 }
 
 #faq h1{
     font-size: 10em;
     font-family: 'Baumans', cursive;
-    padding-left: 10%;
+    padding-left: 30%;
     padding-top: 0%;
     color: #9B9788;
 }
@@ -331,90 +325,54 @@
     text-decoration: none;
     list-style-type: none;
     padding: 4%;
+    padding-left: 65%;
     font-size: 1.75em;
     font-family: 'Baumans', cursive;
     color: #9B9788;
     width: 100%;
 }
 #faq li:hover {
-    font-size: 2em;
     color: #D4BC6D;
 }
 
 /*This section affects the work examples section of the webpage*/
 
-.row-modal {
-    padding: 3%;
-    position: absolute;
-    margin-bottom: 4%;
-}
-
-#first_example {
-    background-color: #6784F5;
-    padding:2%;
-}
-
-
-#second_example {
-    background-color: #3854C6;
-    padding:2%;
-}
-#third_example {
-    background-color: #6C78A9;
-    padding:2%;
-}
-#fourth_example {
-    background-color: #3E4D8B;
-    padding:2%;
+.vex {
+  background-color: #20296B;
+  position: absolute;
+  width: 100%;
+  padding: 5%;
 }
 
 .example-images:hover {
-    width: 104%;
+    width: 65%;
 }
 
-
-
-/*This section affects the footer section of the webpage*/
-footer {
-    padding-top: 1%;
-    padding-left: 5%;
-    width: 100%;
-    border-style: solid;
-    border-top: thick double black;
+.example-images {
+    margin-left: 20%;
+    margin-top: 15%;
 }
 
-.twitter-follow-button {
-    float: right;
-    margin-right: 1%;
-}
-
-
-
-/*vex popup*/
-.vex {
-  background-color: #0A3570;
-  position: absolute;
-  width: 100%;
-}
 .image1 {
   width: 23%;
   height: 215px;
-  margin: 3%;
+  margin-left: 15%;
   float: left;
+  background-color: #20367D;
 }
 
 .image2 {
   width: 23%;
   height: 215px;
-  margin: 3%;
   float: left;
+  background-color: #555A6B;
 }
 
 .image3 {
   width: 23%;
   height: 215px;
-  margin: 3%;
   float: left;
+  background-color: #20367D;
 }
 
 #backgroundPopup {
@@ -473,3 +431,23 @@ footer {
 div#popup_content {
     margin: 54px 7px;
 }
+
+
+
+/*This section affects the footer section of the webpage*/
+footer {
+    padding-top: 1%;
+    padding-left: 5%;
+    width: 100%;
+    border-style: solid;
+    border-top: thick double black;
+}
+
+.twitter-follow-button {
+    float: right;
+    margin-right: 1%;
+}
+
+
+
+/*vex popup*/
