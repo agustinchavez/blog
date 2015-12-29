@@ -1,22 +1,3 @@
-var myKitties = [
-{
-    title: "Chcago Bikes",
-    pic: "img/bikechicagodemo.png"
-},
-{
-    title: "Weather Now",
-    pic: "img/weather_code_pen.png"
-},
-{
-    title: "Twitch Tv",
-    pic: "img/twitch_tv.png"
-},
-{
-    title: "Fourth Project",
-    pic: "img/coming_soon.jpg"
-}
-];
-
 $(document).ready(function() {
     $(".form-control").css("background-color", "#a0bfde");
     $("#button").on("click", function() {
@@ -58,21 +39,6 @@ $(document).ready(function() {
         ;
     }
     ;
-
-    // work pictures
-    for (var i = 0; i < myKitties.length; ++i) {
-        $("#" + i).css("background-image", "url(" + myKitties[i].pic + ")");
-    }
-    ;
-
-    $(".image").mouseenter(function() {
-        console.log(myKitties[this.id].title);
-        $(this).html("<p class='info'><span class='proj-title'>Title:</span> " + myKitties[this.id].title + "</p>");
-    }
-    ).mouseleave(function() {
-        $("p.info").html("");
-    }
-    );
 
     // Javascript API
 
