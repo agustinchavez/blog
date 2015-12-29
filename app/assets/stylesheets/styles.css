@@ -12,7 +12,7 @@
 }
 
 #navbar {
-    background-color: white;
+    background-color: #484D6B;
     margin-right: 4%;
     width: 100%;
 }
@@ -24,7 +24,7 @@
 }
 
 #navbar a {
-    color: #003366;
+    color: #AEB2B8;
     font-family: "PT Serif",Georgia,Times,serif;
     line-height: 1.75;
     font-size: 112.5%;
@@ -290,6 +290,34 @@
 #contact_me {
     width: 100%;
     padding: 0%;
+    margin-bottom: 0%;
+}
+
+.contact_information p {
+    color: black;
+    font-size: 1.5em;
+    font-family: 'Baumans', cursive;
+    font-weight: bold;
+}
+
+#form-group-name {
+    width: 70%;
+    font-family: 'Baumans', cursive;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+#form-group-email {
+    width: 70%;
+    font-family: 'Baumans', cursive;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+#form-group-message {
+    font-family: 'Baumans', cursive;
+    font-weight: bold;
+    font-size: 2em;
 }
 
 /*This section affects the faq section of the page*/
@@ -441,13 +469,18 @@ footer {
     width: 100%;
     border-style: solid;
     border-top: thick double black;
+    background: #3F3F45;
+
 }
 
+.footer_text {
+    font-family: 'Baumans', cursive;
+}
 .twitter-follow-button {
     float: right;
-    margin-right: 1%;
+    /*margin-right: 1%;*/
+    margin: 2% 1%;
 }
-
 
 
 /*vex popup*/
