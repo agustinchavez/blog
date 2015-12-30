@@ -38,14 +38,14 @@
 }
 
 /*This section affects the carousel at the top of page*/
-/*@-webkit-keyframes STAR-MOVE {
+@-webkit-keyframes STAR-MOVE {
     from {
         background-position: 5% 5%
     }
     to {
         background-position: 1300% 600%
     }
-}*/
+}
 
 
 
