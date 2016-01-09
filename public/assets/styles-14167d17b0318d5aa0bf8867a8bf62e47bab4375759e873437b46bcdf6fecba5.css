@@ -1,0 +1,524 @@
+
+.container {
+    margin: 2% auto;
+}
+
+
+/*This section affects the navbar*/
+#navbar li {
+    display: inline-block;
+    float: right;
+    text-transform: uppercase;
+}
+
+#navbar {
+    background-color: #484D6B;
+    margin-right: 4%;
+    width: 100%;
+}
+
+#myNavbar {
+    z-index: 1;
+    float: right;
+    margin-right: 2%;
+}
+
+#navbar a {
+    color: #AEB2B8;
+    font-family: "PT Serif",Georgia,Times,serif;
+    line-height: 1.75;
+    font-size: 112.5%;
+    letter-spacing: 0.05em;
+    top: 0;
+    -webkit-transition: color 600ms;
+}
+
+#navbar a:hover {
+    color: #ff0;
+}
+
+/*This section affects the carousel at the top of page*/
+@-webkit-keyframes STAR-MOVE {
+    from {
+        background-position: 5% 5%
+    }
+    to {
+        background-position: 1300% 600%
+    }
+}
+
+
+
+#home {
+    background: black url(/assets/sunsetsunrise.jpg);
+    background-size: cover;
+    position: relative;
+    padding-bottom: 30%;
+    z-index: 100;
+    top: 0;
+    margin-bottom: 0%;
+}
+
+#midground {
+    background: url(/assets/midground.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 200;
+
+    -webkit-animation-name: STAR-MOVE;
+    -webkit-animation-duration: 150s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+}
+
+#home h1 {
+    font-family: 'Baumans', cursive;
+    text-align: center;
+    font-size: 8em;
+    margin-top: 15%;
+    color: #AEB2B8;
+}
+
+#home p {
+    color: #E3E6F1;
+    /*width: 80%;*/
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    font-size: 1.2em;
+    color: #AEB2B8;
+}
+
+
+
+/*This section affects right after the carousel*/
+.introduction {
+    text-align: center;
+    padding: 5%;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-left: 0%;
+    width: 100%;
+    height:22em;
+    background-color: #20296B;
+    position:relative;
+}
+
+.introduction h1 {
+    color: #AEB2B8;
+}
+
+/*This section affects the about section*/
+.col-md-6 {
+    background:#3F3F45;
+}
+
+.aboutPic:before{
+    content:'';
+    position:absolute;
+    bottom:100%;
+    border-left:100vw solid transparent;
+    border-bottom: 4.5em solid #3F3F45;
+    padding-top: 5%;
+}
+
+#about {
+    padding: 0%;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    background-color: #3F3F45;
+    width: 100%;
+}
+
+.about h1 {
+    font-size: 2.5em;
+    line-height: 1.05;
+    font-family: 'Baumans', cursive;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 0%;
+    padding-top: 5%;
+    padding-bottom: 1%;
+    text-align: center;
+    margin-bottom: 5%;
+    color: #AEB2B8;
+}
+
+.aboutPic{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.aboutPic img{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-left: 10%;
+    border-radius: 25px;
+    border: 2px solid black;
+    background-color: black;
+}
+
+.aboutText {
+    font-size: 1.25em;
+
+}
+
+
+.container p {
+    width: 75%;
+    float: left;
+    margin-right: 2.12766%;
+    float: none;
+    margin: 0 auto 2rem;
+    font-family: "PT Serif",Georgia,Times,serif;
+    line-height: 1.75;
+    font-size: 112.5%;
+    color: #AEB2B8;
+}
+
+.container h2 {
+    width: 75%;
+    float: left;
+    margin-right: 2.12766%;
+    float: none;
+    margin: 0 auto 2rem;
+    font-family: 'Baumans', cursive;
+    line-height: 1.75;
+    font-size: 200%;
+    color: #111;
+}
+
+.container h4 {
+    width: 75%;
+    float: left;
+    margin-right: 2.12766%;
+    float: none;
+    margin: 0 auto 2rem;
+    font-family: 'Baumans', cursive;
+    line-height: 1.75;
+    font-size: 100%;
+    color: #111;
+    font-weight: bold;
+}
+/*Services provided*/
+
+#services_wrapper {
+    padding: 5%;
+    padding-bottom: 12%;
+    margin-left: auto;
+    margin-right: auto;
+    background: #20296B;
+}
+
+.glyphicon-pencil, .glyphicon-wrench, .glyphicon-open {
+  font-size: 3.5em;
+  text-align: center;
+  border-radius: 50%;
+  border: 3px solid;
+  padding: 10%;
+  margin-left: 32%;
+  border-color:#AEB2B8;
+  color: #AEB2B8;
+}
+
+
+.indiv_serv h2 {
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Montserrat Alternates', sans-serif;
+  text-align: center;
+  color: #AEB2B8;
+}
+
+.indiv_serv p {
+  font-size: 1.2em;
+  line-height: 20px;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  position: absolute;
+}
+
+#design-description, #develop-description, #deploy-description {
+    color: #AEB2B8;
+}
+
+/*This section affects the contact section of the page.*/
+.get_in_touch {
+    font-size: 1em;
+    line-height: 1.05;
+    font-family: 'Baumans', cursive;
+    font-weight: bold;
+    text-transform: uppercase;
+    /*margin-top: 8%;*/
+    width: 100%;
+    float: left;
+    margin-right: 2.12766%;
+    float: none;
+    margin: 0 auto 2rem;
+    /*padding-top: 5%;*/
+}
+
+.contact_me_pic {
+    line-height: 1.05;
+    float: right;
+    padding-left: 10%;
+    padding-top: 20%;
+    background-image: url(/assets/blue_coffee_mug.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    color: black;
+    background-position: bottom;
+    width: 100%;
+    padding-bottom: 15%;
+}
+
+.contact_me {
+    font-size: 5em;
+    line-height: 1.05;
+    font-family: 'Baumans', cursive;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #AEB2B8;
+    padding: 5% 5% 5% 5%;
+    margin: 8% 30% 10% 23%;
+    background:#7f7f7f;
+    background:rgba(0,0,0,0.5);
+}
+
+#contact_me {
+    width: 100%;
+    padding: 0%;
+    margin-bottom: 0%;
+}
+
+.contact_information p {
+    color: black;
+    font-size: 1.5em;
+    font-family: 'Baumans', cursive;
+    font-weight: bold;
+}
+
+#form-group-name {
+    width: 70%;
+    font-family: 'Baumans', cursive;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+#form-group-email {
+    width: 70%;
+    font-family: 'Baumans', cursive;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+#form-group-message {
+    font-family: 'Baumans', cursive;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+/*This section affects the faq section of the page*/
+
+#faq {
+
+    background: #3F3F45;
+    padding-bottom: 8%;
+
+}
+
+.col-md-2:before{
+    content:'';
+    position:absolute;
+    bottom:100%;
+    border-right:100vw solid transparent;
+    border-bottom: 5em solid #3F3F45;
+    padding-top: 5%;
+}
+
+#faq h1{
+    font-size: 10em;
+    font-family: 'Baumans', cursive;
+    padding-left: 30%;
+    padding-top: 0%;
+    color: #9B9788;
+}
+#faq h1:hover{
+    color: #D4BC6D;
+}
+
+#faq li{
+    text-decoration: none;
+    list-style-type: none;
+    padding: 4%;
+    padding-left: 65%;
+    font-size: 1.75em;
+    font-family: 'Baumans', cursive;
+    color: #9B9788;
+    width: 100%;
+}
+#faq li:hover {
+    color: #D4BC6D;
+}
+
+/*This section affects the work examples section of the webpage*/
+
+.vex {
+  background-color: #20296B;
+  position: absolute;
+  width: 100%;
+  padding: 5%;
+}
+
+.example-images:hover {
+    width: 65%;
+}
+
+.example-images {
+    margin-left: 20%;
+    margin-top: 15%;
+}
+
+.image1 {
+  width: 20%;
+  height: 215px;
+  margin-left: 10%;
+  float: left;
+  background-color: #20367D;
+}
+
+.image2 {
+  width: 20%;
+  height: 215px;
+  float: left;
+  background-color: #20367D;
+}
+
+.image3 {
+  width: 20%;
+  height: 215px;
+  float: left;
+  background-color: #555A6B;
+}
+
+.image4 {
+  width: 20%;
+  height: 215px;
+  float: left;
+  background-color: #555A6B;
+}
+
+#backgroundPopup {
+    z-index:1;
+    position: fixed;
+    display:none;
+    height:100%;
+    width:100%;
+    background:#000000;
+    top:0px;
+    left:0px;
+}
+
+#toPopup1 {
+    padding: 2%;
+    background: #FFFFFF;
+    color: #000000;
+    display: none;
+    font-size: 14px;
+    left: 20%;
+    /*margin-left: -200px;*/
+    position: fixed;
+    top: 10%;
+    width: 60%;
+    z-index: 2;
+}
+
+#toPopup2 {
+    padding: 2%;
+    background: #FFFFFF;
+    color: #000000;
+    display: none;
+    font-size: 14px;
+    left: 20%;
+    /*margin-left: -200px;*/
+    position: fixed;
+    top: 10%;
+    width: 60%;
+    z-index: 2;
+}
+
+#toPopup3 {
+    padding: 2%;
+    background: #FFFFFF;
+    color: #000000;
+    display: none;
+    font-size: 14px;
+    left: 20%;
+    /*margin-left: -200px;*/
+    position: fixed;
+    top: 10%;
+    width: 60%;
+    z-index: 2;
+}
+
+#toPopup4 {
+    padding: 2%;
+    background: #FFFFFF;
+    color: #000000;
+    display: none;
+    font-size: 14px;
+    left: 20%;
+    /*margin-left: -200px;*/
+    position: fixed;
+    top: 10%;
+    width: 60%;
+    z-index: 2;
+}
+
+div#popup_content {
+    margin: 54px 7px;
+}
+
+.work_example_description {
+    font-family: 'Baumans', cursive;
+}
+
+.work_example_description h1 {
+    font-size: 2.5em;
+}
+
+.work_example_description h4 {
+    background-color: #C7CED1;
+    color: #960E20;
+    text-align: center;
+}
+
+.work_example_description p {
+    font-size: 1.2em;
+}
+
+
+/*This section affects the footer section of the webpage*/
+footer {
+    padding-top: 1%;
+    padding-left: 5%;
+    width: 100%;
+    border-style: solid;
+    border-top: thick double black;
+    background: #3F3F45;
+
+}
+
+.footer_text {
+    font-family: 'Baumans', cursive;
+}
+.twitter-follow-button {
+    float: right;
+    /*margin-right: 1%;*/
+    margin: 2% 1%;
+}
+
+
+/*vex popup*/
