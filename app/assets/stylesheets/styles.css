@@ -382,25 +382,32 @@
 }
 
 .image1 {
-  width: 23%;
+  width: 20%;
   height: 215px;
-  margin-left: 15%;
+  margin-left: 10%;
   float: left;
   background-color: #20367D;
 }
 
 .image2 {
-  width: 23%;
+  width: 20%;
+  height: 215px;
+  float: left;
+  background-color: #20367D;
+}
+
+.image3 {
+  width: 20%;
   height: 215px;
   float: left;
   background-color: #555A6B;
 }
 
-.image3 {
-  width: 23%;
+.image4 {
+  width: 20%;
   height: 215px;
   float: left;
-  background-color: #20367D;
+  background-color: #555A6B;
 }
 
 #backgroundPopup {
@@ -443,6 +450,20 @@
 }
 
 #toPopup3 {
+    padding: 2%;
+    background: #FFFFFF;
+    color: #000000;
+    display: none;
+    font-size: 14px;
+    left: 20%;
+    /*margin-left: -200px;*/
+    position: fixed;
+    top: 10%;
+    width: 60%;
+    z-index: 2;
+}
+
+#toPopup4 {
     padding: 2%;
     background: #FFFFFF;
     color: #000000;
