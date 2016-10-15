@@ -1,0 +1,336 @@
+
+
+.breadCrumbs {
+    text-align: center;
+    font-size: 1em;
+    list-style-type: none;
+    min-height: 1em;
+    width: 100%;
+    font-family: 'Hind', sans-serif;
+}
+
+.breadCrumbs li {
+    display: inline;
+     /*height: 1em;*/
+}
+
+.navLinks  a {
+    color: white;
+    margin: 2%;
+}
+
+.aclogo {
+   height: 5em;
+}
+
+.bigBackground {
+    background: url('/assets/taxi_city.jpg') no-repeat center center fixed;
+    background-size: 100% 100%;
+    margin: 0 auto 0 auto;
+    position: fixed;
+    width: 100%;
+    height: 45em;
+}
+
+.splashHeader {
+    color:white;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.splashTitle {
+    font-size: 5.5em;
+    font-family: 'Arbutus', cursive;
+}
+
+.splashSecond {
+    text-align: center;
+    color: white;
+    margin-top: 0em;
+}
+
+.splashSub {
+    font-size: 1.5em;
+    margin-top: 0em;
+}
+
+
+.workRows:hover {
+    -webkit-transform: scale(1.01);
+    transform: scale(1.01);
+}
+
+.workRows {
+  height: 15em;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+}
+
+.box * {
+    position: relative;
+}
+
+.box {
+  border:1px solid gray;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+
+}
+
+.box p {
+  color: white;
+  font-size: 2em;
+  text-align: center;
+  margin-top: 2.25em;
+  font-family: 'Fredericka the Great', cursive;
+  opacity: 0;
+  -webkit-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+}
+
+
+
+.box p:hover {
+  opacity: 1;
+}
+
+.box a:hover {
+    color: white;
+    text-decoration: none;
+}
+.box a {
+    color: white;
+    text-decoration: none;
+}
+
+.box:hover {
+    text-decoration: underline;
+}
+
+.overlay:before{
+  position: absolute;
+  content:" ";
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display: none;
+  z-index:0;
+}
+
+.overlay:hover:before{
+  display: block;
+}
+
+.firstBlock {
+  background-image: url("https://s3.amazonaws.com/agustinchavez.ninja/38H.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.firstBlock:before {
+  background-color: rgba(255,53,0, 0.5);
+}
+
+.secondBlock {
+  background-image: url("https://s3.amazonaws.com/agustinchavez.ninja/127H.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.secondBlock:before {
+  background-color: rgba(255,53,0, 0.5);
+}
+
+.thirdBlock {
+  background-image: url("https://s3.amazonaws.com/agustinchavez.ninja/62H.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.thirdBlock:before {
+  background-color: rgba(255,53,0, 0.5);
+}
+
+
+.sixthBlock {
+  background-image: url("https://s3.amazonaws.com/agustinchavez.ninja/88H.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.sixthBlock:before {
+  background-color: rgba(255,53,0, 0.5);
+}
+
+.fifthBlock {
+  background-color: rgba(255,30,0, 0.5);
+  /*background-size: cover;*/
+  /*background-repeat: no-repeat;*/
+  /*color: white;*/
+  font-size: 2em;
+  text-align: center;
+  padding-top: 2.25em;
+  padding-bottom: .6em;
+  font-family: 'Fredericka the Great', cursive;
+  color: white;
+  /*opacity: 0;*/
+}
+
+.fifthBlock:before {
+  background-color: rgba(255,53,0, 0.5);
+}
+
+.seventhBlock {
+  background-image: url("https://s3.amazonaws.com/agustinchavez.ninja/coffee_mug.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.seventhBlock:before {
+  background-color: rgba(255,53,0, 0.5);
+}
+
+.eighthBlock {
+  background-image: url("https://s3.amazonaws.com/agustinchavez.ninja/portfolioheroimage3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.eighthBlock:before {
+  background-color: rgba(255,53,0, 0.5);
+}
+
+.ninthBlock {
+  background-image: url("https://s3.amazonaws.com/agustinchavez.ninja/laptop_and_coffee.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.ninthBlock:before {
+  background-color: rgba(255,53,0, 0.5);
+}
+
+.tenthBlock {
+  background-image: url("https://s3.amazonaws.com/agustinchavez.ninja/lighthouse-905674.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.tenthBlock:before {
+  background-color: rgba(255,53,0, 0.5);
+}
+
+/*styling below affect the footer*/
+
+footer {
+    padding-top: 1%;
+    padding-left: 5%;
+    width: 100%;
+    border-style: solid;
+    border-top: thick double black;
+    background: #3F3F45;
+
+}
+
+.footer_text {
+    font-family: 'Baumans', cursive;
+}
+.twitter-follow-button {
+    float: right;
+    /*margin-right: 1%;*/
+    margin: 2% 1%;
+}
+.aclogoFooter {
+   height: 4em;
+   /*float: right;*/
+}
+.footerList li{
+    display: inline;
+    margin: 1%;
+}
+
+
+
+/*styling below affects the about me section*/
+
+.container-fluid {
+  width: 100%;
+  position: relative;
+}
+
+.aboutSplash {
+  position: relative;
+  text-align:center;
+}
+
+
+.aboutSplash h1 {
+  margin-top:2em;
+  font-size: 6em;
+  font-family: 'Fredericka the Great';
+  font-weight: bold;
+  color: #395b6d;
+}
+
+.aboutSplash h3 {
+  font-size: 5em;
+  font-family: 'Fredericka the Great';
+  font-weight: bold;
+  color: #395b6d;
+}
+
+.meBlurb {
+  font-size: 2em;
+  font-style:italic;
+  padding-bottom: 1em;
+  padding-top:1em;
+  font-family: 'Hind', sans-serif;
+  color: #395b6d;
+}
+
+.aboutMeTitle {
+  font-family: 'Hind', sans-serif;
+  font-weight: bold;
+  color: #395b6d;
+}
+
+.aboutSubSect {
+  position: relative;
+  font-family: 'Hind', sans-serif;
+  border: none;
+  margin-bottom: 10%;
+}
+
+.aboutSubSect p{
+ color: gray;
+}
+
+.aboutNav  a {
+    color: #395b6d;
+    margin: 2%;
+}
+
+/*styling below affects contact page*/
+
+#contact_me {
+  margin-bottom: 10%;
+}
+
+#get_in_touch{
+  font-size: 3em;
+  font-family: 'Fredericka the Great';
+}
+
+.contact_information p{
+  font-family: 'Hind', sans-serif;
+  color: #395b6d;
+}
+
+.form-group {
+  font-family: 'Hind', sans-serif;
+  color: #395b6d;
+}
