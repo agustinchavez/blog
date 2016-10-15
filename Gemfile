@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby "2.2.4"
+ruby "2.3.1"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
 
@@ -55,4 +55,10 @@ gem 'devise'
 
 gem "twitter-bootstrap-rails"
 
+gem 'bootstrap', '~> 4.0.0.alpha4'
+gem 'sprockets-rails', :require => 'sprockets/railtie'
+gem 'autoprefixer-rails'
+
 gem 'will_paginate', '~> 3.0.6'
+
+gem "font-awesome-rails"

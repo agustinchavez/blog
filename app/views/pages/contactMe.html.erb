@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Agustin Chavez</title>
+
+   <!-- Custom styles for this template go here -->
+   <%= stylesheet_link_tag 'application', 'https://fonts.googleapis.com/css?family=Fredericka+the+Great' %>
+   <%= stylesheet_link_tag 'application', 'https://fonts.googleapis.com/css?family=Hind:300" rel="stylesheet' %>
+
+   <%= stylesheet_link_tag 'application', 'https://fonts.googleapis.com/css?family=Arbutus' %>
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <%= stylesheet_link_tag    'styles', media: 'all', 'data-turbolinks-track' => true %>
+    <!-- jQuery is required for Bootstrap to work -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <!-- Latest compiled and minified Bootstrap JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+     <%= javascript_include_tag 'scripts', 'data-turbolinks-track' => true %>
+     <%= csrf_meta_tags %>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- javscript API -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6_AGSzD00U-Y0cFt1NXFVF7GNo-yd39g"></script>
+
+  </head>
+
+  <body data-spy="scroll" data-target=".navbar"  >
+
+
+<div class="container-fluid" style="width:100%;">
+  <div class="row">
+    <div class="col-md-12">
+       <nav class="navbar  navbar-static-top" style="background-color: transparent;">
+            <ul class="breadCrumbs">
+              <li class="navLinks aboutNav"><%= link_to "WORK", root_path %></li>
+              <li class="navLinks aboutNav"><%= link_to "ABOUT ME", me_path %></li>
+              <li><img class="aclogo" src="/assets/ACLogo.png"><%= link_to "", root_path %></li>
+              <li class="navLinks aboutNav"><%= link_to "BLOG", posts_path %></li>
+              <li class="navLinks aboutNav"><%= link_to "CONTACT", contact_path %></li>
+            </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<div class="container" id="contact_me">
+    <div class="contact_me_pic">
+      <h1 class="contact_me" id="get_in_touch">Get In Touch</h1>
+      <div class="contact_information col-lg-4 col-md-4">
+          <p>Interested in working together?</p>
+          <br>
+          <p>Send me an email with some information about your project.</p>
+           <br>
+          <p>Please allow up to a couple of business days for me to respond.</p>
+      </div>
+
+    <div class="contact-form col-lg-8 col-md-8">
+      <%= flash[:notice] %>
+
+      <%= form_tag("/pages/thank_you") do %>
+      <div class="row">
+        <div class="col-md-8">
+          <div class="form-group" id="form-group-name">
+            <%= label_tag :name, "Name" %>
+            <%= text_field_tag :name, nil, class: "form-control", placeholder: "Enter Name" %>
+          </div>
+          <div class="form-group" id="form-group-email">
+            <%= label_tag :email, "Email Address" %>
+            <%= text_field_tag :email, nil, class: "form-control", placeholder: "Enter Email" %>
+          </div>
+          <div class="form-group" id="form-group-message">
+            <%= label_tag :message, "Message" %>
+            <%= text_area_tag :message, nil, :rows => 10, :cols => 20, class: "form-control", placeholder: "Enter Message" %>
+          </div>
+          <div class="submit">
+            <button type="button" class="btn btn-primary">
+              <%= submit_tag "Send" %><% end %>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <footer>
+    <p class="footer_text"><a href="https://twitter.com/chavezagustin1" class="twitter-follow-button" data-show-count="false">@chavezagustin1</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></p>
+
+    <ul class="footerList">
+      <li><img class="aclogoFooter" src="/assets/ACLogo.png"></li>
+      <li><a href="https://codepen.io/agustinchavez/" target="_blank"><i class="fa fa-codepen fa-2x" aria-hidden="true"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/agustin-chavez-479784b9" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
+    </ul>
+  </footer>
+
+</body>
+</html>

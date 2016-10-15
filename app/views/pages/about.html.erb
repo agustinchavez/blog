@@ -6,14 +6,19 @@
     <title>Agustin Chavez</title>
 
    <!-- Custom styles for this template go here -->
-   <link href='https://fonts.googleapis.com/css?family=Baumans' rel='stylesheet' type='text/css'>
-   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300' rel='stylesheet' type='text/css'>
+   <%= stylesheet_link_tag 'application', 'https://fonts.googleapis.com/css?family=Fredericka+the+Great' %>
+   <%= stylesheet_link_tag 'application', 'https://fonts.googleapis.com/css?family=Hind:300" rel="stylesheet' %>
+
+   <%= stylesheet_link_tag 'application', 'https://fonts.googleapis.com/css?family=Arbutus' %>
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <%= stylesheet_link_tag    'styles', media: 'all', 'data-turbolinks-track' => true %>
     <!-- jQuery is required for Bootstrap to work -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <!-- Latest compiled and minified Bootstrap JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
      <%= javascript_include_tag 'scripts', 'data-turbolinks-track' => true %>
      <%= csrf_meta_tags %>
@@ -27,7 +32,73 @@
 
   <body data-spy="scroll" data-target=".navbar"  >
 
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="navbar">
+
+
+
+<div class="container-fluid backContainer" style="width:100%;">
+  <div class="row">
+    <div class="col-md-12 bigBackground">
+       <nav class="navbar  navbar-static-top" style="background-color: transparent;">
+            <ul class="breadCrumbs">
+              <li class="navLinks"><%= link_to "WORK", root_path %></li>
+              <li class="navLinks"><%= link_to "ABOUT ME", me_path %></li>
+              <li><img class="aclogo" src="/assets/ACLogo.png"><%= link_to "", root_path %></li>
+              <li class="navLinks"><%= link_to "BLOG", posts_path %></li>
+              <li class="navLinks"><%= link_to "CONTACT", contact_path %></li>
+            </ul>
+      </nav>
+      <h1 class="splashHeader splashTitle">AGUSTIN</h1>
+      <h1 class="splashSecond splashTitle">CHAVEZ</h1>
+      <h4 class="splashHeader splashSub">WEB DEVELOPER</h4>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid" style="width:100%;">
+  <div class="row">
+    <div class="col-sm-3 box overlay firstBlock workRows">
+      <p><a href="https://bikechicagodemo.herokuapp.com/" target='blank'>Bikes Chicago</a><p>
+    </div>
+    <div class="col-sm-6 box overlay secondBlock workRows">
+      <p><a href="https://vast-eyrie-3700.herokuapp.com/" target="blank">Podcast Network</a><p>
+    </div>
+    <div class="col-sm-3 box overlay thirdBlock workRows">
+      <p><a href="https://github.com/agustinchavez/teammatch" target="blank">TeamMatch</a><p>
+    </div>
+  </div>
+
+   <div class="row">
+    <div class="col-sm-7 fifthBlock ">
+      <p>This portfolio belongs to me, Agustin Chavez, a developer, tv nerd, and overall swell guy, thanks for taking a look!<p>
+    </div>
+    <div class="col-sm-5 box overlay sixthBlock workRows">
+      <p><a href="https://github.com/agustinchavez/tacotime" target="blank">TacoTime</a><p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-2 box overlay seventhBlock workRows">
+      <p><a href="https://github.com/agustinchavez/chicagosoccer" blank="https://github.com/agustinchavez/chicagosoccer">ChicagoSoccer</a><p>
+    </div>
+    <div class="col-sm-6 box overlay eighthBlock workRows">
+      <p><a href="https://codepen.io/agustinchavez/full/NRbABb/" target="blank">Simon Game</a><p>
+    </div>
+    <div class="col-sm-2 box overlay ninthBlock workRows">
+      <p><a href="https://codepen.io/agustinchavez/full/bZJzVd/" target="blank">Tic Tac Toe</a><p>
+    </div>
+    <div class="col-sm-2 box overlay tenthBlock workRows">
+      <p><a href="https://codepen.io/agustinchavez/full/GqEwGk/" target="blank">WikiViewer</a><p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+    <!-- <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="navbar">
   <div class="container-fluid">
     <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -55,9 +126,9 @@
       </div>
     </div>
   </div>
-</nav>
+</nav> -->
 
-<div class="jumbotron" id="home">
+<!-- <div class="jumbotron" id="home">
    <h1>Agustin Chavez</h1>
       <p>
         <strong>Student. TV nerd. Soccerholic. Web Developer</strong><br> Contact me if you'd like to work together, i'm always excited to hear about new projects.<br>
@@ -126,12 +197,12 @@
         </h1>
       </div>
     </div>
-</div>
+</div> -->
 
-<!-- work section -->
+<!-- work section
 
 
-<div class="vex" id="work">
+<!-- <div class="vex" id="work">
     <a href="#" class="toPopup1"><div class="image1"><img src="/assets/bikechicagodemo.png" class="example-images" alt="Box Web page" width="90%" height="90%"></div></a>
     <a href="#" class="toPopup4"><div class="image4"><img src="/assets/podcast_net.png" class="example-images" alt="boxwebpage" width="90%" height="90%"></div></a>
     <a href="#" class="toPopup2"><div class="image2"><img src="/assets/twitch_tv.png" class="example-images" alt="boxwebpage" width="90%" height="90%"></div></a>
@@ -200,7 +271,7 @@
 </div>
 
 <!-- contact form -->
-  <div class="container" id="contact_me">
+ <!--  <div class="container" id="contact_me">
     <div class="contact_me_pic">
       <h1 class="contact_me" id="get_in_touch">Get In Touch</h1>
       <div class="contact_information col-lg-4 col-md-4">
@@ -242,16 +313,18 @@
 
   </div>
 
-
+ -->
   <footer>
-    <p class="footer_text">&copy Agustin Chavez <a href="https://twitter.com/chavezagustin1" class="twitter-follow-button" data-show-count="false">Follow @chavezagustin1</a>
+    <p class="footer_text"><a href="https://twitter.com/chavezagustin1" class="twitter-follow-button" data-show-count="false">@chavezagustin1</a>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></p>
 
+    <ul class="footerList">
+      <li><img class="aclogoFooter" src="/assets/ACLogo.png"></li>
+      <li><a href="https://codepen.io/agustinchavez/" target="_blank"><i class="fa fa-codepen fa-2x" aria-hidden="true"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/agustin-chavez-479784b9" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
+    </ul>
   </footer>
 
-    <!--
-    ================================================== -->
-    <!-- Can place script tags with JavaScript files here -->
 
   </body>
 </html>

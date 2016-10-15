@@ -4,6 +4,14 @@ class PagesController < ApplicationController
     render :layout => false
   end
 
+  def me
+    render :layout => false
+  end
+
+  def contactMe
+    render :layout => false
+  end
+
   def thank_you
     @name = params[:name]
     @email = params[:email]

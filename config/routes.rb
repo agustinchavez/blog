@@ -9,6 +9,10 @@ Rails.application.routes.draw do
 
   get "/about", to: 'pages#about'
 
+  get "/me" => "pages#me"
+
+  get "/contact" => "pages#contactMe"
+
   post 'pages/thank_you'
 
 end
